@@ -1,10 +1,10 @@
----
 **项目信息**
 
 - **开发者**：梦屿
 - **官网**：[imengyu.com](https://www.imengyu.com)
 - **许可证**：[Apache License 2.0](LICENSE)
 - **版权声明**：本软件及文档 © 2026 imengyu.com，保留所有权利。在遵守 Apache 2.0 许可证条款的前提下，允许修改、复制和分发，但须保留完整版权声明及免责声明。
+
 ---
 
 # AliyunDevSms - 阿里云短信认证服务开发者版

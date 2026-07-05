@@ -1,0 +1,13 @@
+<div style="padding: 20px; line-height: 1.8; color: #333;">
+    <h3 style="margin: 0 0 12px;">阿里云短信认证服务 - 开发者版</h3>
+    <p>这是魔方业务系统 v10 普通短信接口插件，外观和官方短信接口一致，底层调用阿里云号码认证服务 PNVS 的 <code>SendSmsVerifyCode</code>。</p>
+    <table class="table table-bordered" style="max-width: 820px; margin-top: 12px;">
+        <tr><td style="width: 160px;background:#f7f7f7;">服务接口</td><td>Dypnsapi / SendSmsVerifyCode</td></tr>
+        <tr><td style="background:#f7f7f7;">签名模板</td><td>请使用号码认证控制台赠送签名和赠送模板；系统赠送签名必须搭配系统赠送模板。</td></tr>
+        <tr><td style="background:#f7f7f7;">模板ID</td><td>插件会读取 <code>config/smsTemplate.php</code> 自动预置模板和 TemplateCode，例如 <code>100001</code>。安装插件自动导入，删除插件自动清理。</td></tr>
+        <tr><td style="background:#f7f7f7;">变量规则</td><td>魔方变量 <code>@var(code)</code> 会作为阿里云模板参数 <code>{"code":"验证码","min":"5"}</code> 发送。</td></tr>
+        <tr><td style="background:#f7f7f7;">校验逻辑</td><td>当前仍由魔方生成和校验 6 位验证码；有效期固定 5 分钟；阿里云接口负责短信下发。插件不配置验证码长度和有效时长，避免误导。</td></tr>
+    </table>
+    <p style="color:#888;font-size:13px;margin-top:12px;">如果赠送签名变化，请改 <code>config.php</code> 的签名 options；如果赠送模板 CODE 或预填模板变化，请改 <code>config/smsTemplate.php</code>。</p>
+</div>
+
